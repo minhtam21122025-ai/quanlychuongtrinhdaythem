@@ -166,9 +166,12 @@ export default function App() {
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
-    // Bypass credential check as requested
-    setIsLoggedIn(true);
-    setLoginError("");
+    if (loginUsername === "0366000555" && loginPassword === "Minhtam@123") {
+      setIsLoggedIn(true);
+      setLoginError("");
+    } else {
+      setLoginError("Số điện thoại hoặc mật khẩu không chính xác.");
+    }
   };
 
   const handleLogout = () => {
@@ -859,9 +862,10 @@ export default function App() {
                 <input 
                   type="text" 
                   className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition-all"
-                  placeholder="admin"
+                  placeholder="Số điện thoại"
                   value={loginUsername}
                   onChange={(e) => setLoginUsername(e.target.value)}
+                  required
                 />
               </div>
             </div>
@@ -875,9 +879,10 @@ export default function App() {
                 <input 
                   type="password" 
                   className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition-all"
-                  placeholder="••••••••"
+                  placeholder="Mật khẩu"
                   value={loginPassword}
                   onChange={(e) => setLoginPassword(e.target.value)}
+                  required
                 />
               </div>
             </div>
