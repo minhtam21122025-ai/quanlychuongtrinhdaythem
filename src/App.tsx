@@ -845,7 +845,7 @@ export default function App() {
             <div className="bg-emerald-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
               <Lock className="text-emerald-600" size={32} />
             </div>
-            <h2 className="text-2xl font-bold text-gray-800">Phần mềm quản lý dạy thêm cho giáo viên</h2>
+            <h2 className="text-2xl font-bold text-gray-800">Phần Mềm quản lý chương trình dạy cho giáo viên</h2>
             <p className="text-gray-500 text-sm mt-2">Đăng nhập để tiếp tục</p>
           </div>
 
@@ -906,7 +906,7 @@ export default function App() {
     <div className="min-h-screen bg-gray-100 font-sans text-gray-900">
       <header className="bg-white shadow-sm py-4">
         <div className="container mx-auto px-4 flex justify-between items-center">
-          <h1 className="text-2xl font-bold text-emerald-600">Phần mềm quản lý dạy thêm cho giáo viên</h1>
+          <h1 className="text-2xl font-bold text-emerald-600">Phần Mềm quản lý chương trình dạy cho giáo viên</h1>
           <nav className="flex items-center space-x-6">
             <ul className="flex space-x-6">
               <li>
